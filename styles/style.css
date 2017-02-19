@@ -1,16 +1,14 @@
-/*------------------------------
+/*--------------------------------------------------
 RULES FOR ENTIRE PAGE
-------------------------------*/
-
-
+--------------------------------------------------*/
 
 * {
-  font-family: 'Helvetica';
-  box-sizing: border-box;
-  font-size: 0;
-  margin: 0 auto;
-  margin-top: 10px;
-  color: cornflowerblue;
+    font-family: 'Helvetica';
+    box-sizing: border-box;
+    font-size: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: cornflowerblue;
 }
 
 img {
@@ -18,12 +16,9 @@ img {
 }
 
 
-
-/*------------------------------
+/*--------------------------------------------------
 BASIC LAYOUT
-------------------------------*/
-
-
+--------------------------------------------------*/
 
 h1, h2 {
     padding-left: 50px;
@@ -40,10 +35,10 @@ h2 {
 }
 
 label {
-    position: relative; 
+    position: relative;
     display: block;
     padding: 12px;
-    background: white; 
+    background: white;
     font-size: 30px;
     cursor: pointer;
 }
@@ -62,31 +57,36 @@ label {
 }
 
 
-
-/*------------------------------
+/*--------------------------------------------------
 HOVER AND CLICK EVENTS
-------------------------------*/
-
+--------------------------------------------------*/
 
 
 /*animates arrows on hover*/
+
 label:hover .fa {
     transform: rotate(45deg);
     color: darkblue;
 }
 
+
 /*hides sub-menus by default*/
+
 .main-menu ul {
     display: none;
 }
 
+
 /*hides check box*/
+
 .main-menu input[type=checkbox] {
     position: absolute;
 }
 
+
 /*when checkbox is checked, change
 <ul> sibling element to block display*/
+
 input[type=checkbox]:checked + label + ul {
     display: block;
 }
